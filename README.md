@@ -33,7 +33,7 @@ ________________________________________________________________________________
 
 ⚡ React + Vite → Fast development with HMR
 
-🎨 TailwindCSS / WebCrumbs → Clean, responsive UI styling
+🎨 TailwindCSS → Clean, responsive UI styling
 
 🌙 Dark Mode → Manual + automatic theme switching
 
@@ -86,6 +86,8 @@ Commit changes (git commit -m "Add new feature")
 Push branch (git push origin feature/my-feature)
 
 Open a Pull Request
+
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 📜 LICENSE
 
