@@ -1,11 +1,16 @@
-🎙️ Speakly – Text to Speech App
+<img width="2000" height="783" alt="speakly-high-resolution-logo-transparent" src="https://github.com/user-attachments/assets/67122773-6130-4a1e-82a6-aa23fd2613db" />
+
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Overview
 
 Speakly is a modern Text-to-Speech (TTS) web application built with React + Vite.
 It allows users to type, paste, or load text and convert it into natural-sounding speech using the browser’s Web Speech API.
 
 The project features dark/light mode, voice preview, category filters, and support for multiple languages and voices.
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-✨ Features
+✨ FEATURES
 
 🔊 Text-to-Speech Conversion – Enter text and hear it spoken out loud
 
@@ -22,10 +27,9 @@ The project features dark/light mode, voice preview, category filters, and suppo
 ⏯️ Playback Controls – Play, pause, resume, stop speech easily
 
 📦 Chunked Playback – Handles large text by breaking it into smaller parts
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-💾 Download Audio – Save speech as .wav (beta feature, client-only)
-
-🛠️ Tech Stack
+🛠️ TECH STACK
 
 ⚡ React + Vite → Fast development with HMR
 
@@ -36,8 +40,10 @@ The project features dark/light mode, voice preview, category filters, and suppo
 🖥️ Web Speech API → Browser-native Text-to-Speech engine
 
 📂 ESLint + Prettier → Clean, consistent codebase
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-🚀 Getting Started
+🚀 GETTING STARTED
+
 1️⃣ Clone the Repo
 git clone https://github.com/your-username/speakly.git
 cd speakly
@@ -51,22 +57,13 @@ npm run dev
 
 Open http://localhost:5173
  in your browser.
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-🎨 Styling
+📷 Screenshots
 
-Buttons, cards, and tabs adapt dynamically to light / dark mode
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-Selected categories change background + text colors depending on theme
-
-Uses Tailwind utility classes with custom overrides for consistent design
-
-Gradient headings, shadow effects, and rounded corners for a modern look
-
-📷 Screenshots (Optional)
-
-Add screenshots or GIFs of your app in light & dark mode here.
-
-📌 Roadmap
+📌 NEEDED IMPROVEMENTS
 
  Improve audio download/export reliability
 
@@ -76,7 +73,9 @@ Add screenshots or GIFs of your app in light & dark mode here.
 
  Add cloud-based TTS backends for higher quality voices
 
-🤝 Contributing
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+🤝 CONTRIBUTING
 
 Fork the repo
 
@@ -88,7 +87,7 @@ Push branch (git push origin feature/my-feature)
 
 Open a Pull Request
 
-📜 License
+📜 LICENSE
 
 This project is licensed under the MIT License.
 Feel free to use, modify, and share ⭐
