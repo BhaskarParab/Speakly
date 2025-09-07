@@ -4,7 +4,47 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
+
 import logo from "./assets/speakly-high-resolution-logo-transparent.png";
+import enUS from "./assets/Gemini_Generated_Image_x3rx1sx3rx1sx3rx.png";
+import enGB from "./assets/Gemini_Generated_Image_x3rx1sx3rx1sx3rx (1).png";
+import esES from "./assets/Spanish Speaker (Spain).png";
+import esUS from "./assets/Spanish Speaker (US).png";
+import frFR from "./assets/French Speaker.png";
+import hiIN from "./assets/Hindi Speaker.png";
+import idID from "./assets/Indonesian Speaker.png";
+import itIT from "./assets/Italian Speaker.png";
+import jaJP from "./assets/Japanese Speaker.png";
+import koKR from "./assets/Korean Speaker.png";
+import nlNL from "./assets/Gemini_Generated_Image_tqy3iwtqy3iwtqy3 (7).png";
+import plPL from "./assets/Gemini_Generated_Image_tqy3iwtqy3iwtqy3 (6).png";
+import ptBR from "./assets/Gemini_Generated_Image_tqy3iwtqy3iwtqy3 (5).png";
+import ruRU from "./assets/Gemini_Generated_Image_tqy3iwtqy3iwtqy3 (4).png";
+import zhCN from "./assets/Mandarin Speaker (Mainland China).png";
+import zhHK from "./assets/Cantonese Speaker (Hong Kong).png";
+import zhTW from "./assets/Gemini_Generated_Image_tqy3iwtqy3iwtqy3 (1).png";
+import deDE from "./assets/German Speaker.png";
+
+export const voiceImages = {
+  "en-US": enUS,
+  "en-GB": enGB,
+  "es-ES": esES,
+  "es-US": esUS,
+  "fr-FR": frFR,
+  "hi-IN": hiIN,
+  "id-ID": idID,
+  "it-IT": itIT,
+  "ja-JP": jaJP,
+  "ko-KR": koKR,
+  "nl-NL": nlNL,
+  "pl-PL": plPL,
+  "pt-BR": ptBR,
+  "ru-RU": ruRU,
+  "zh-CN": zhCN,
+  "zh-HK": zhHK,
+  "zh-TW": zhTW,
+  "de-DE": deDE,
+};
 
 function Home({ darkMode, toggleDarkMode }) {
   const [voices, setVoices] = useState([]);
