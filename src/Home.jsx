@@ -25,7 +25,7 @@ import zhHK from "./assets/Cantonese Speaker (Hong Kong).png";
 import zhTW from "./assets/Gemini_Generated_Image_tqy3iwtqy3iwtqy3 (1).png";
 import deDE from "./assets/German Speaker.png";
 
-export const voiceImages = {
+const voiceImages = {
   "en-US": enUS,
   "en-GB": enGB,
   "es-ES": esES,
@@ -175,26 +175,26 @@ function Home({ darkMode, toggleDarkMode }) {
   };
 
   // Map language codes to images
-  const voiceImages = {
-    "en-US": "src/assets/Gemini_Generated_Image_x3rx1sx3rx1sx3rx.png",
-    "en-GB": "src/assets/Gemini_Generated_Image_x3rx1sx3rx1sx3rx (1).png",
-    "es-ES": "src/assets/Spanish Speaker (Spain).png",
-    "es-US": "src/assets/Spanish Speaker (US).png",
-    "fr-FR": "src/assets/French Speaker.png",
-    "hi-IN": "src/assets/Hindi Speaker.png",
-    "id-ID": "src/assets/Indonesian Speaker.png",
-    "it-IT": "src/assets/Italian Speaker.png",
-    "ja-JP": "src/assets/Japanese Speaker.png",
-    "ko-KR": "src/assets/Korean Speaker.png",
-    "nl-NL": "src/assets/Gemini_Generated_Image_tqy3iwtqy3iwtqy3 (7).png",
-    "pl-PL": "src/assets/Gemini_Generated_Image_tqy3iwtqy3iwtqy3 (6).png",
-    "pt-BR": "src/assets/Gemini_Generated_Image_tqy3iwtqy3iwtqy3 (5).png",
-    "ru-RU": "src/assets/Gemini_Generated_Image_tqy3iwtqy3iwtqy3 (4).png",
-    "zh-CN": "src/assets/Mandarin Speaker (Mainland China).png",
-    "zh-HK": "src/assets/Cantonese Speaker (Hong Kong).png",
-    "zh-TW": "src/assets/Gemini_Generated_Image_tqy3iwtqy3iwtqy3 (1).png",
-    "de-DE": "src/assets/German Speaker.png",
-  };
+  // const voiceImages = {
+  //   "en-US": "src/assets/Gemini_Generated_Image_x3rx1sx3rx1sx3rx.png",
+  //   "en-GB": "src/assets/Gemini_Generated_Image_x3rx1sx3rx1sx3rx (1).png",
+  //   "es-ES": "src/assets/Spanish Speaker (Spain).png",
+  //   "es-US": "src/assets/Spanish Speaker (US).png",
+  //   "fr-FR": "src/assets/French Speaker.png",
+  //   "hi-IN": "src/assets/Hindi Speaker.png",
+  //   "id-ID": "src/assets/Indonesian Speaker.png",
+  //   "it-IT": "src/assets/Italian Speaker.png",
+  //   "ja-JP": "src/assets/Japanese Speaker.png",
+  //   "ko-KR": "src/assets/Korean Speaker.png",
+  //   "nl-NL": "src/assets/Gemini_Generated_Image_tqy3iwtqy3iwtqy3 (7).png",
+  //   "pl-PL": "src/assets/Gemini_Generated_Image_tqy3iwtqy3iwtqy3 (6).png",
+  //   "pt-BR": "src/assets/Gemini_Generated_Image_tqy3iwtqy3iwtqy3 (5).png",
+  //   "ru-RU": "src/assets/Gemini_Generated_Image_tqy3iwtqy3iwtqy3 (4).png",
+  //   "zh-CN": "src/assets/Mandarin Speaker (Mainland China).png",
+  //   "zh-HK": "src/assets/Cantonese Speaker (Hong Kong).png",
+  //   "zh-TW": "src/assets/Gemini_Generated_Image_tqy3iwtqy3iwtqy3 (1).png",
+  //   "de-DE": "src/assets/German Speaker.png",
+  // };
 
   // Separate image for 4th English male voice
   const maleEnglishImage =
