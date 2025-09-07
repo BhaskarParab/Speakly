@@ -76,7 +76,7 @@ ________________________________________________________________________________
 
 📌 𝗡𝗘𝗘𝗗𝗘𝗗 𝗜𝗠𝗣𝗥𝗢𝗩𝗘𝗠𝗘𝗡𝗧𝗦
 
- Improve audio download/export reliability
+ Add audio download/export reliability
 
  Add customizable speech speed & pitch sliders
 
