@@ -61,6 +61,17 @@ ________________________________________________________________________________
 
 📷 𝗦𝗰𝗿𝗲𝗲𝗻𝘀𝗵𝗼𝘁𝘀
 
+<img width="1905" height="949" alt="Screenshot from 2025-09-08 00-01-03" src="https://github.com/user-attachments/assets/f258d843-1799-46c0-bfc5-5764b0769747" />
+
+<img width="1906" height="944" alt="Screenshot from 2025-09-08 00-02-38" src="https://github.com/user-attachments/assets/454ada43-e0a4-4b1b-98ca-262d614dd051" />
+
+<img width="1904" height="950" alt="Screenshot from 2025-09-08 00-03-08" src="https://github.com/user-attachments/assets/be1b646a-eca1-4f17-ab00-27a3221dab72" />
+
+<img width="1905" height="948" alt="Screenshot from 2025-09-08 00-04-53" src="https://github.com/user-attachments/assets/9a6f99e1-52cf-4215-9704-850e60ccc6a9" />
+
+<img width="1905" height="950" alt="Screenshot from 2025-09-08 00-05-30" src="https://github.com/user-attachments/assets/3eee481c-7c20-4ec0-8bfe-cefe7491f816" />
+
+
 _______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 📌 𝗡𝗘𝗘𝗗𝗘𝗗 𝗜𝗠𝗣𝗥𝗢𝗩𝗘𝗠𝗘𝗡𝗧𝗦
