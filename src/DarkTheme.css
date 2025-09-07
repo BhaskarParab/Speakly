@@ -1,0 +1,116 @@
+/* Creating CSS custom properties for light and dark themes */
+:root {
+  /* Light theme colors */
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f1f5f9;
+  --bg-card: rgba(255, 255, 252, 0.8);
+  --bg-input: rgba(248, 250, 252, 0.8);
+  --bg-gradient-from: #eef2ff;
+  --bg-gradient-to: #e0f2fe;
+
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --text-tertiary: #94a3b8;
+  --text-accent: #3b82f6;
+
+  --border-primary: rgba(226, 232, 240, 0.5);
+  --border-secondary: rgba(203, 213, 225, 0.5);
+
+  --shadow-primary: rgba(0, 0, 0, 0.1);
+  --shadow-secondary: rgba(0, 0, 0, 0.05);
+}
+
+/* Dark theme colors */
+.dark-theme {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-tertiary: #334155;
+  --bg-card: rgba(30, 41, 59, 0.8);
+  --bg-input: rgba(15, 23, 42, 0.5);
+  --bg-gradient-from: #1e1b4b;
+  --bg-gradient-to: #312e81;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-tertiary: #94a3b8;
+  --text-accent: #60a5fa;
+
+  --border-primary: rgba(71, 85, 105, 0.3);
+  --border-secondary: rgba(100, 116, 139, 0.5);
+
+  --shadow-primary: rgba(0, 0, 0, 0.3);
+  --shadow-secondary: rgba(0, 0, 0, 0.2);
+}
+
+/* Override Tailwind classes with CSS variables */
+.theme-bg-primary {
+  background-color: var(--bg-primary) !important;
+}
+
+.theme-bg-secondary {
+  background-color: var(--bg-secondary) !important;
+}
+
+.theme-bg-card {
+  background-color: var(--bg-card) !important;
+}
+
+.theme-bg-input {
+  background-color: var(--bg-input) !important;
+}
+
+.theme-text-primary {
+  color: var(--text-primary) !important;
+}
+
+.theme-text-secondary {
+  color: var(--text-secondary) !important;
+}
+
+.theme-text-tertiary {
+  color: var(--text-tertiary) !important;
+}
+
+.theme-border-primary {
+  border-color: var(--border-primary) !important;
+}
+
+.theme-border-secondary {
+  border-color: var(--border-secondary) !important;
+}
+
+.theme-gradient-bg {
+  background: linear-gradient(135deg, var(--bg-gradient-from), var(--bg-gradient-to)) !important;
+}
+
+/* Added navbar-specific theme classes */
+.navbar-theme {
+  background-color: var(--bg-secondary) !important;
+}
+
+.navbar-text {
+  color: var(--text-primary) !important;
+}
+
+.hover-bg:hover {
+  background-color: var(--bg-tertiary) !important;
+}
+
+/* Added Home component theme classes */
+.theme-bg {
+  background: linear-gradient(135deg, var(--bg-gradient-from), var(--bg-gradient-to)) !important;
+}
+
+.theme-text {
+  color: var(--text-secondary) !important;
+}
+
+.theme-card {
+  background-color: var(--bg-card) !important;
+  border-color: var(--border-primary) !important;
+}
+
+.theme-card:hover {
+  background-color: var(--bg-tertiary) !important;
+}
