@@ -206,7 +206,7 @@ function TextToSpeech({ darkMode, toggleDarkMode }) {
                 <div className="max-w-4xl mx-auto space-y-4">
                   <p className="text-2xl md:text-3xl theme-text-secondary font-light leading-relaxed">
                     Transform your words into{" "}
-                    <span className="font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-cyan-600 bg-clip-text text-transparent">
+                    <span className="font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
                       lifelike speech
                     </span>
                   </p>
@@ -222,7 +222,7 @@ function TextToSpeech({ darkMode, toggleDarkMode }) {
 
         <div className="relative z-10 container mx-auto px-6 pb-20">
           <div className="max-w-6xl mx-auto">
-            <div className="theme-bg-card backdrop-blur-2xl theme-border-primary border rounded-3xl shadow-2xl overflow-hidden">
+            <div className="theme-bg-card backdrop-blur-2xl theme-border-primary border rounded-3xl shadow-xl overflow-hidden">
               <div className="p-8 md:p-12  theme-border-secondary">
                 <div className="space-y-6">
                   <div className="flex items-center gap-4">
