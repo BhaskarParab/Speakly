@@ -1,20 +1,20 @@
 /* Creating CSS custom properties for light and dark themes */
 :root {
   /* Light theme colors */
-  --bg-primary: #f8fafc;
+  --bg-primary: #ffffff;
   --bg-secondary: #ffffff;
   --bg-tertiary: #f1f5f9;
   --bg-card: rgba(255, 255, 252, 0.8);
-  --bg-input: rgba(248, 250, 252, 0.8);
-  --bg-gradient-from: #eef2ff;
-  --bg-gradient-to: #e0f2fe;
+  --bg-input: rgba(214, 214, 214, 0.8);
+  --bg-gradient-from: #ffffff;
+  --bg-gradient-to: #ffffff;
 
   --text-primary: #1e293b;
   --text-secondary: #64748b;
   --text-tertiary: #94a3b8;
   --text-accent: #3b82f6;
 
-  --border-primary: rgba(226, 232, 240, 0.5);
+  --border-primary: rgba(211, 211, 211, 0.5);
   --border-secondary: rgba(203, 213, 225, 0.5);
 
   --shadow-primary: rgba(0, 0, 0, 0.1);
@@ -24,12 +24,12 @@
 /* Dark theme colors */
 .dark-theme {
   --bg-primary: #0f172a;
-  --bg-secondary: #1e293b;
+  --bg-secondary: #000000;
   --bg-tertiary: #334155;
-  --bg-card: rgba(30, 41, 59, 0.8);
+  --bg-card: rgba(0, 0, 0, 0.8);
   --bg-input: rgba(15, 23, 42, 0.5);
-  --bg-gradient-from: #1e1b4b;
-  --bg-gradient-to: #312e81;
+  --bg-gradient-from: #000000;
+  --bg-gradient-to: #181717;
 
   --text-primary: #f8fafc;
   --text-secondary: #cbd5e1;

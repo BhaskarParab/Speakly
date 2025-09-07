@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect } from "react"
+import logo from "./assets/speakly-high-resolution-logo-transparent.png";
 
 function Navbar({ darkMode, toggleDarkMode }) {
   useEffect(() => {
@@ -14,26 +15,22 @@ function Navbar({ darkMode, toggleDarkMode }) {
   return (
     <nav className="navbar-theme flex items-center justify-between px-6 py-3 shadow-md transition-colors duration-300">
       {/* Logo / Title */}
-      <h1 className="text-2xl font-bold tracking-wide navbar-text">
-  <span
-    className={`bg-clip-text text-transparent ${
-      darkMode
-        ? "bg-gradient-to-r  from-white via-violet-200 to-white"
-        : "bg-gradient-to-r  from-slate-500 via-slate-500 to-slate-500"
-    }`}
-  >
-    Speakly
-  </span>
-  </h1>
+      <h1 className="text-2xl font-bold tracking-wide navbar-text flex items-center">
+      <img
+        src={logo}
+        alt="Speakly Logo"
+        className="h-8 md:h-10 lg:h-12 object-contain"
+      />
+    </h1>
 
       {/* Dark Mode Toggle */}
       <button onClick={toggleDarkMode} className="p-2 rounded-full transition-colors duration-300 hover-bg">
         {darkMode ? (
-          <span role="img" aria-label="sun">
+          <span role="img" aria-label="sun" className="text-2xl">
             ☀️
           </span>
         ) : (
-          <span role="img" aria-label="moon">
+          <span role="img" aria-label="moon" className="text-2xl">
             🌙
           </span>
         )}

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
+import logo from "./assets/speakly-high-resolution-logo-transparent.png";
 
 function Home({ darkMode, toggleDarkMode }) {
   const [voices, setVoices] = useState([]);
@@ -161,7 +162,7 @@ function Home({ darkMode, toggleDarkMode }) {
   const categories = [
     { id: "all", name: "All Voices", icon: "🌍" },
     { id: "english", name: "English", icon: "🇺🇸" },
-    { id: "european", name: "European", icon: "🇪🇺" },
+    { id: "european", name: "European", icon: "🇫🇷" },
     { id: "asian", name: "Asian", icon: "🌏" },
     { id: "americas", name: "Americas", icon: "🌎" },
   ];
@@ -203,17 +204,13 @@ function Home({ darkMode, toggleDarkMode }) {
 
         <div className="relative z-10 flex flex-col items-center p-6 min-h-screen">
           <div className="text-center mb-16 max-w-4xl">
-            <h1 className="text-6xl font-extrabold mb-4">
-              <span
-                className={`bg-clip-text text-transparent ${
-                  darkMode
-                    ? "bg-gradient-to-r  from-white via-violet-200 to-white"
-                    : "bg-gradient-to-r  from-slate-500 via-slate-500 to-slate-500"
-                }`}
-              >
-                Speakly
-              </span>
-            </h1>
+            <h1 className="text-6xl font-extrabold mb-4 flex justify-center">
+      <img
+        src={logo}
+        alt="Speakly Logo"
+        className="h-16 md:h-20 lg:h-24 object-contain"
+      />
+    </h1>
             <p className="text-2xl theme-text-secondary font-light mb-8">
               Transform text into natural speech with unlimited characters
             </p>
@@ -221,27 +218,27 @@ function Home({ darkMode, toggleDarkMode }) {
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <div className="theme-bg-card backdrop-blur-sm rounded-full px-6 py-3 border theme-border-primary">
                 <span className="theme-text-primary font-medium">
-                  🎯 19+ AI Voices
+                   19+ AI Voices
                 </span>
               </div>
               <div className="theme-bg-card backdrop-blur-sm rounded-full px-6 py-3 border theme-border-primary">
                 <span className="theme-text-primary font-medium">
-                  🌍 Multiple Languages
+                   Multiple Languages
                 </span>
               </div>
               <div className="theme-bg-card backdrop-blur-sm rounded-full px-6 py-3 border theme-border-primary">
                 <span className="theme-text-primary font-medium">
-                  🎭 Emotional Voices
+                   Emotional Voices
                 </span>
               </div>
               <div className="theme-bg-card backdrop-blur-sm rounded-full px-6 py-3 border theme-border-primary">
                 <span className="theme-text-primary font-medium">
-                  ⚡ Instant Preview
+                   Instant Preview
                 </span>
               </div>
             </div>
 
-            <div className="theme-bg-card backdrop-blur-md rounded-2xl p-8 shadow-lg border theme-border-primary">
+            <div className="theme-bg-card backdrop-blur-md rounded-2xl p-8 theme-border-primary">
               <h2 className="text-3xl font-bold mb-4 theme-text-primary">
                 Why Choose Speakly?
               </h2>
@@ -256,32 +253,32 @@ function Home({ darkMode, toggleDarkMode }) {
                 </span>
                 , letting you convert text into natural speech instantly.
                 Whether you're learning a new language, practicing
-                pronunciation, or creating content, Speakly gives you{" "}
+                pronunciation, or coverting your favorite novels to audio, Speakly gives you{" "}
                 <span className="font-semibold text-accent">full control</span>{" "}
                 — at no cost.
               </p>
             </div>
           </div>
 
-          <div className="w-full max-w-6xl mb-8">
+          <div className="w-full max-w-6xl mb-8 justify-items-center">
             {/* Search Bar */}
             <div className="mb-6">
               <div className="relative max-w-md mx-auto">
                 <input
                   type="text"
-                  placeholder="Search voices by language or name..."
+                  placeholder="Search..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full px-4 py-3 pl-12 theme-bg-input border theme-border-primary rounded-xl focus:outline-none focus:ring-2 focus:ring-primary theme-text-primary placeholder-opacity-60"
+                  className="w-full px-4 py-3 pl-12 theme-bg-primary border-2 theme-border-primary rounded-xl focus:outline-none focus:ring-2 focus:ring-primary theme-text-primary placeholder-opacity-60"
                 />
-                <div className="absolute left-4 top-1/2 transform -translate-y-1/2 theme-text-secondary">
-                  🔍
+                <div className="absolute left-4 top-1/2 transform -translate-y-1/2 theme-text-primary">
+                  🔍︎
                 </div>
               </div>
             </div>
 
             {/* Category Tabs */}
-<div className="flex flex-wrap justify-center gap-2 mb-8">
+<div className="flex flex-wrap justify-center gap-2 mb-8 mt-10">
   {categories.map((category) => {
     const isSelected = selectedCategory === category.id
 
@@ -318,7 +315,7 @@ function Home({ darkMode, toggleDarkMode }) {
   })}
 </div>
 </div>
-
+<p className="text-center theme-text-primary text-2xl mb-10">Select voice</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl mb-16">
             {filteredVoices.map((voice, index) => {
               const [langCode, countryCode] = voice.lang.split("-");
@@ -338,7 +335,7 @@ function Home({ darkMode, toggleDarkMode }) {
               return (
                 <div
                   key={index}
-                  className="theme-bg-card backdrop-blur-lg rounded-3xl border theme-border-primary shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer hover:scale-105 group relative overflow-hidden"
+                  className="theme-bg-card backdrop-blur-lg rounded-3xl border-2 theme-border-secondary shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer hover:scale-105 group relative overflow-hidden"
                   onClick={() => handleSelectVoice(voice)}
                 >
                   {/* Gradient border effect */}
@@ -370,7 +367,7 @@ function Home({ darkMode, toggleDarkMode }) {
                           : "bg-secondary hover:bg-secondary/80"
                       }`}
                     >
-                      {playingVoice === voice.name ? "⏹️ Stop" : "▶️ Preview"}
+                      {playingVoice === voice.name ? "⏹ Stop" : "▶ Preview"}
                     </button>
 
                     {/* <p className="text-sm theme-text-secondary">{voice.name}</p> */}
@@ -436,6 +433,7 @@ function Home({ darkMode, toggleDarkMode }) {
             </div>
           </div>
         </div>
+                <p className="theme-text-primary text-center text-sm mt-5">This tts works predominantly in google browser</p>
       </div>
     </>
   );
